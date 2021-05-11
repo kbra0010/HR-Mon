@@ -1,5 +1,5 @@
 # HRMon
-# 2021-05-11 22:46:51Z
+# 2021-05-11 23:44:48Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -15,7 +15,3 @@ set_io "Seven_Segment(4)" iocell 2 4
 set_io "Seven_Segment(5)" iocell 2 5
 set_io "Seven_Segment(6)" iocell 2 6
 set_io "Decimal_place(0)" iocell 2 7
-set_io "Digit_0(0)" iocell 1 7
-set_io "Digit_1(0)" iocell 1 6
-set_io "Digit_2(0)" iocell 1 5
-set_io "Digit_3(0)" iocell 1 4

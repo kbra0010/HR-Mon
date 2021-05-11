@@ -13,8 +13,24 @@
 #include "tgmath.h" 
 
 void saveDigitsToRAM();
-void pulseDot();
+void writeDisplay();
 
+void pulseDot();
+void measurePulse();
+void startSequence();
+int getDigitIndex(int inputIndex);
+
+CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, enabled by default at start
+    // triggered once every second by 1Hz timer
+    // turn on IR LEDs
+    // check for phototransistor reception somehow
+    // if phototransistor receives input, activate other timer to begin measurement and disable the 1Hz timer for this ISR
+    // if not, end this ISR and wait for it to be triggered again
+}
+
+void measurePulse() {
+    // 
+}
 
 // hex values to be sent to 7 seg display for active low
 // these could be preprocessor commands instead (#define)
@@ -42,26 +58,35 @@ int detectFlag;
 long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
 int digit[4]; // should be a local var
 
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    isr_1_ClearPending();
+    isr_1_StartEx(sleepMode);
     
     
+    //One_Hz_Timer_Enable(); //unnecessary, _Start encompasses this
+    One_Hz_Timer_Start(); // enabled by default, as unit starts in sleep mode
     
-    
-    
-    
+    /*
+    EEPROM_Start();
+    EEPROM_WriteByte(15,0); // we are group 15
+    //EEPROM_WriteByte(units,1);
+    int teamNumber = EEPROM_ReadByte(0);
+    */
+    EEPROM_Start();
+    int teamNumber = EEPROM_ReadByte(0);
     
     digit[0] = 1;
-    digit[1] = 2;
+    digit[1] = 2;//testing % 10;
     digit[2] = 3;
     digit[3] = 4;
     saveDigitsToRAM();
     
     for(;;) {
         //Finger detecting thresholding
+        /*
         if (lux > threshold) { //Main loop for detected finger
             detectFlag = 1; 
         }
@@ -69,26 +94,21 @@ int main(void)
             displayData[3] = powl(2,7);
             Seven_Segment_6(1);
         }
+        */
         
         
         
 
         
-        for(int index = 0; index < 4; index++) { // loop through digits 0 to 3
-            int currentDigit = powl(2,index);
-            int currentDigitInverted = powl(2,8)-1 - currentDigit;
-            
-            
-            
-            Digit_Reg_Write(currentDigitInverted); // correct way, just inverts bits
-            //Digit_Reg_Write(15);
-            
-            Seven_Segment_Reg_Write(displayData[index]);
-            CyDelay(1);
-        }
+        writeDisplay(displayData);
     }
 }
 
+int getDigitIndex(int inputIndex) {
+	int currentDigit = powl(2,inputIndex);
+	int currentDigitInverted = powl(2,8)-1 - currentDigit;
+	return currentDigitInverted;
+}
 
 void saveDigitsToRAM() {
     for(int index = 0; index < 4; index++) { // loop through digits 0 to 3
@@ -147,6 +167,18 @@ void saveDigitsToRAM() {
     // segment pin low = segment ILLUMINATED
 }
 
+void writeDisplay(long unsigned int displayData[4]) {
+    for(int index = 0; index < 4; index++) { // loop through digits 0 to 3 (all digits)
+        int currentDigit = getDigitIndex(index);
+        
+        Digit_Reg_Write(currentDigit); // correct way, just inverted bits
+        //Digit_Reg_Write(15);
+        
+        Seven_Segment_Reg_Write(displayData[index]);
+        CyDelay(1); // for stability
+    }
+}
+
 void pulseDot() {
     if(detectFlag == 0) { // dot is off
         displayData[3] = displayData[3] + powl(2,7);    //setting MSB of final digit high, will be decimal point
@@ -158,4 +190,55 @@ void pulseDot() {
     }
 }
 
+void startSequence() {
+    // blink all digits for 1 sec each
+	for(int i=0; i<4; i++) {
+		//displayData[i] = eight;
+        int currentDigit = getDigitIndex(i);
+        Digit_Reg_Write(currentDigit);
+        
+		Seven_Segment_Reg_Write(eight);
+        
+        CyDelay(1000);
+	}
+    
+    // display group number
+    int teamNumber = EEPROM_ReadByte(0);
+    
+    digit[0] = 0;
+    digit[1] = 0; //testing % 10;
+    digit[2] = ((teamNumber/10) % 10);
+    digit[3] = (teamNumber % 10);
+    saveDigitsToRAM();
+    writeDisplay(displayData);
+}
 
+
+/*
+
+// 7 segment testing code
+EEPROM_Start();
+    int teamNumber = EEPROM_ReadByte(0);
+    
+    digit[0] = 1;
+    digit[1] = 2;//testing % 10;
+    digit[2] = 3;
+    digit[3] = 4;
+    saveDigitsToRAM();
+    
+    for(;;) {
+        for(int index = 0; index < 4; index++) { // loop through digits 0 to 3
+            int currentDigit = powl(2,index);
+            int currentDigitInverted = powl(2,8)-1 - currentDigit;
+            
+            
+            
+            Digit_Reg_Write(currentDigitInverted); // correct way, just inverts bits
+            //Digit_Reg_Write(15);
+            
+            Seven_Segment_Reg_Write(displayData[index]);
+            CyDelay(1);
+            
+        }
+    }
+*/

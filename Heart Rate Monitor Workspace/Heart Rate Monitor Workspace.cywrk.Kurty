@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Heart Rate Monitor Workspace\HRMon\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Heart Rate Monitor Workspace\HRMon\Generated_Source">
 <ExpandedNodeIds>
 <v>Heart Rate Monitor Workspace</v>
 <v>Heart Rate Monitor Workspace\HRMon</v>
@@ -32,7 +32,6 @@
 <v>Heart Rate Monitor Workspace\HRMon\Header Files\cyapicallbacks.h</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files\main.c</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source</v>
 <v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -54,24 +53,6 @@
 <v>Heart Rate Monitor Workspace\HRMon\Source Files</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files\main.c</v>
 <v>Heart Rate Monitor Workspace\HRMon\Generated_Source</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cy_boot</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Decimal_place</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_0</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_1</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_2</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_3</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_Reg</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Seven_Segment</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Seven_Segment_Reg</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cydevice.h</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -114,7 +95,11 @@
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_3.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg_PM.lst</v>
+<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\EEPROM.lst</v>
+<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_1.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer.lst</v>
+<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer_PM.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg.lst</v>
 <v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg_PM.lst</v>
@@ -128,38 +113,6 @@
 <VisibleNodeIds>
 <v>Heart Rate Monitor Workspace</v>
 <v>Heart Rate Monitor Workspace\HRMon</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Decimal_place.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_0.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_1.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_2.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_3.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.elf</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.hex</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.map</v>
-<v>Heart Rate Monitor Workspace\HRMon\HRMon.gpdsc</v>
-<v>Heart Rate Monitor Workspace\HRMon\HRMon.rpt</v>
-<v>Heart Rate Monitor Workspace\HRMon\HRMon_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -175,10 +128,15 @@
 <v>Heart Rate Monitor Workspace\HRMon\CY8C58LP Family Datasheet</v>
 <v>Heart Rate Monitor Workspace\HRMon\System Reference Guides</v>
 <v>Heart Rate Monitor Workspace\HRMon\System Reference Guides\cy_boot_v6_0</v>
+<v>Heart Rate Monitor Workspace\HRMon\cy_clock_v2_20.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\cy_isr_v1_70.pdf</v>
 <v>Heart Rate Monitor Workspace\HRMon\cy_pins_v2_20</v>
 <v>Heart Rate Monitor Workspace\HRMon\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Heart Rate Monitor Workspace\HRMon\CyControlReg_v1_80</v>
 <v>Heart Rate Monitor Workspace\HRMon\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\EEPROM_v3_0.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\Timer_v2_80.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Heart Rate Monitor Workspace</v>
@@ -187,10 +145,15 @@
 <v>Heart Rate Monitor Workspace\HRMon\CY8C58LP Family Datasheet</v>
 <v>Heart Rate Monitor Workspace\HRMon\System Reference Guides</v>
 <v>Heart Rate Monitor Workspace\HRMon\System Reference Guides\cy_boot_v6_0</v>
+<v>Heart Rate Monitor Workspace\HRMon\cy_clock_v2_20.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\cy_isr_v1_70.pdf</v>
 <v>Heart Rate Monitor Workspace\HRMon\cy_pins_v2_20</v>
 <v>Heart Rate Monitor Workspace\HRMon\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Heart Rate Monitor Workspace\HRMon\CyControlReg_v1_80</v>
 <v>Heart Rate Monitor Workspace\HRMon\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\EEPROM_v3_0.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\Timer_v2_80.pdf</v>
+<v>Heart Rate Monitor Workspace\HRMon\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -199,18 +162,7 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs>
-<name v=".\HRMon.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\HRMon.cydsn\HRMon.cydwr" />
-<name v=".\HRMon.cydsn\main.c" />
-</OpenDocs>
-<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
-
-  Actipro Docking/MDI for WinForms
-  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
-  http://www.actiprosoftware.com
-
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1098, 509" SelectedTabbedMdiWindow="98d1915c-6865-4d99-95e0-e20f084432b8"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d25ef4f0-ec4d-4806-80f9-637a86d37bed" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\TopDesign\TopDesign.cysch" Guid="7bc594d2-707b-40d3-8e27-adacb35ff954" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cydwr" Guid="813df22b-eec6-40f3-9003-5fa21c1c1228" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\main.c" Guid="98d1915c-6865-4d99-95e0-e20f084432b8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<OpenDocs />
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
