@@ -10,7 +10,7 @@
  * ========================================
 */
 #include "project.h"
-#include "tgmath.h"
+#include "tgmath.h" 
 
 void saveDigitsToRAM();
 void pulseDot();
@@ -36,7 +36,8 @@ int digitTwo = 2;
 int digitOne = 4;
 int digitZero = 8;
 
-int dotFlag;
+int detectFlag;
+int detectFlag;
 
 long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
 int digit[4]; // should be a local var
@@ -46,7 +47,13 @@ int main(void)
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-
+    
+    
+    
+    
+    
+    
+    
     digit[0] = 1;
     digit[1] = 2;
     digit[2] = 3;
@@ -54,6 +61,19 @@ int main(void)
     saveDigitsToRAM();
     
     for(;;) {
+        //Finger detecting thresholding
+        if (lux > threshold) { //Main loop for detected finger
+            detectFlag = 1; 
+        }
+        else {  //pulsing if no detectoin
+            displayData[3] = powl(2,7);
+            Seven_Segment_6(1);
+        }
+        
+        
+        
+
+        
         for(int index = 0; index < 4; index++) { // loop through digits 0 to 3
             int currentDigit = powl(2,index);
             int currentDigitInverted = powl(2,8)-1 - currentDigit;
@@ -128,13 +148,13 @@ void saveDigitsToRAM() {
 }
 
 void pulseDot() {
-    if(dotFlag == 0) { // dot is off
-        displayData[3] = displayData[3] + powl(2,7);
-        dotFlag = 1;
+    if(detectFlag == 0) { // dot is off
+        displayData[3] = displayData[3] + powl(2,7);    //setting MSB of final digit high, will be decimal point
+        detectFlag = 1;     //change trigger so that will change to turn off decimal next time step
     }
-    else if(dotFlag == 1) {
+    else if(detectFlag == 1) {
         displayData[3] = displayData[3] - powl(2,7);
-        dotFlag = 0;
+        detectFlag = 0;
     }
 }
 

@@ -1,5 +1,5 @@
--- Project:   C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cyprj
--- Generated: 05/05/2021 08:52:42
+-- Project:   C:\Users\Catherine\Desktop\Monash\0. 2021\1. Sem 1\TRC3500\Heart Rate Monitor\Repo\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cyprj
+-- Generated: 05/12/2021 08:47:05
 -- PSoC Creator  4.4
 
 ENTITY HRMon IS
