@@ -26,6 +26,15 @@ CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, ena
     // check for phototransistor reception somehow
     // if phototransistor receives input, activate other timer to begin measurement and disable the 1Hz timer for this ISR
     // if not, end this ISR and wait for it to be triggered again
+    if lux > threshold {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
+        fingerDetected = 1;     //set high to trigger activation loop
+    }
+    else {  //if no finger detected, continue on sleep mode functions every second
+        pulseDot() //calling pulsedot function once every second
+    }
+        
+        
+        
 }
 
 void measurePulse() {
@@ -85,14 +94,14 @@ int main(void)
     saveDigitsToRAM();
     
     for(;;) {
-        //Finger detecting thresholding
+        //Finger detecting thresholding - will need input from IR so commented for now
+        //only test finger detected every second, pulse IR to see if Lux > threshold
         /*
-        if (lux > threshold) { //Main loop for detected finger
+        if (fingerDetected = 1) { //Main loop for detected finger
             detectFlag = 1; 
         }
-        else {  //pulsing if no detectoin
-            displayData[3] = powl(2,7);
-            Seven_Segment_6(1);
+        else {  //pulsing if no light detected so no finger detected - might need to flip this for thresholding lower or higher
+            pulseDot() //get this to run every time the timer signal @ 1hz
         }
         */
         
@@ -179,7 +188,7 @@ void writeDisplay(long unsigned int displayData[4]) {
     }
 }
 
-void pulseDot() {
+void pulseDot() {   //pulsing decimal for sleep mode, call on a 2hz 50% duty cycle (every 1 hz trigger function)
     if(detectFlag == 0) { // dot is off
         displayData[3] = displayData[3] + powl(2,7);    //setting MSB of final digit high, will be decimal point
         detectFlag = 1;     //change trigger so that will change to turn off decimal next time step
