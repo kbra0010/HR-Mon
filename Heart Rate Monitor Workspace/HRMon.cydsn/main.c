@@ -9,9 +9,13 @@
  *
  * ========================================
 */
+
+// ----------------------- LIBRARIES -----------------------
 #include "project.h"
 #include "tgmath.h" 
 
+
+// ----------------------- FUNCTIONS -----------------------
 void saveDigitsToRAM();
 void writeDisplay();
 
@@ -19,6 +23,41 @@ void pulseDot();
 void measurePulse();
 void startSequence();
 int getDigitIndex(int inputIndex);
+
+void programMode();
+void activeMode();
+
+
+// ----------------------- VARIABLES -----------------------
+// hex values to be sent to 7 seg display for active low
+// these could be preprocessor commands instead (#define)
+int zero = 0xC0;
+int one = 0xF9;
+int two = 0xA4;
+int three = 0xB0;
+int four = 0x99;
+int five = 0x92;
+int six = 0x82;
+int seven = 0xF8;
+int eight = 0x80;
+int nine = 0x98;
+
+
+// digit variables (not completely necessary, but a good indicator of one-hot display encoding)
+int digitThree = 1;
+int digitTwo = 2;
+int digitOne = 4;
+int digitZero = 8;
+
+int detectFlag;
+int detectFlag;
+
+long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
+int digit[4]; // should be a local var
+
+
+// ----------------------- ISR BOIS -----------------------
+
 
 CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, enabled by default at start
     // triggered once every second by 1Hz timer
@@ -31,7 +70,7 @@ CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, ena
     //pulse irs to get lux reading
     //feed this into next if statement
     
-    
+    /*
     if (lux > threshold) {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
         //fingerDetected = 1;     //set high to trigger activation loop
         measurePulse(); //might be more efficienct method than above
@@ -65,32 +104,8 @@ void measurePulse() {
     
 }
 
-// hex values to be sent to 7 seg display for active low
-// these could be preprocessor commands instead (#define)
-int zero = 0xC0;
-int one = 0xF9;
-int two = 0xA4;
-int three = 0xB0;
-int four = 0x99;
-int five = 0x92;
-int six = 0x82;
-int seven = 0xF8;
-int eight = 0x80;
-int nine = 0x98;
 
-
-// digit variables (not completely necessary, but a good indicator of one-hot display encoding)
-int digitThree = 1;
-int digitTwo = 2;
-int digitOne = 4;
-int digitZero = 8;
-
-int detectFlag;
-int detectFlag;
-
-long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
-int digit[4]; // should be a local var
-
+// ----------------------- MAIN CODE -----------------------
 
 int main(void)
 {
@@ -116,6 +131,10 @@ int main(void)
     digit[2] = 3;
     digit[3] = 4;
     saveDigitsToRAM();
+    
+    startSequence();
+    CyDelay(1000);
+    measurePulse();
     
     for(;;) {
         //Finger detecting thresholding - will need input from IR so commented for now
@@ -244,8 +263,13 @@ void startSequence() {
     digit[3] = (teamNumber % 10);
     saveDigitsToRAM();
     writeDisplay(displayData);
+    
+    programMode();
 }
 
+void programMode() {
+    
+}
 
 /*
 
