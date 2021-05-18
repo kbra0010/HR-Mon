@@ -26,13 +26,15 @@ CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, ena
     // check for phototransistor reception somehow
     // if phototransistor receives input, activate other timer to begin measurement and disable the 1Hz timer for this ISR
     // if not, end this ISR and wait for it to be triggered again
-    if lux > threshold {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
+    /*
+    if (lux > threshold) {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
         fingerDetected = 1;     //set high to trigger activation loop
     }
     else {  //if no finger detected, continue on sleep mode functions every second
         pulseDot() //calling pulsedot function once every second
     }
-        
+    */
+    pulseDot();  
         
         
 }
