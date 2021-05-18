@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
   28:Generated_Source\PSoC5/Digit_1.c **** *
   29:Generated_Source\PSoC5/Digit_1.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/Digit_1.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 2
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 2
 
 
   31:Generated_Source\PSoC5/Digit_1.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
   52              		.size	Digit_1_Write, .-Digit_1_Write
   53              		.section	.text.Digit_1_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 3
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 3
 
 
   55              		.global	Digit_1_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 03500040 		.word	1073762307
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 4
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  110              		.align	2
  111              		.global	Digit_1_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 5
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 6
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -307,14 +307,14 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  145 000c 5C000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
  147 0011 67010000 		.4byte	.LASF21
- 148 0015 91010000 		.4byte	.LASF22
+ 148 0015 AA010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
  152 0025 02       		.uleb128 0x2
  153 0026 01       		.byte	0x1
  154 0027 06       		.byte	0x6
- 155 0028 F2010000 		.4byte	.LASF0
+ 155 0028 91010000 		.4byte	.LASF0
  156 002c 02       		.uleb128 0x2
  157 002d 01       		.byte	0x1
  158 002e 08       		.byte	0x8
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 7
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -418,10 +418,10 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 8
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 8
 
 
- 256 00f5 FE010000 		.4byte	.LASF18
+ 256 00f5 9D010000 		.4byte	.LASF18
  257 00f9 01       		.byte	0x1
  258 00fa 71       		.byte	0x71
  259 00fb 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 9
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 10
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 11
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  480      02004400 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 12
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 12
 
 
  480      01010101 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  502      20756E73 
  502      69676E65 
  502      6420696E 
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 13
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 13
 
 
  502      7400
@@ -770,28 +770,32 @@ ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 1
  524 0188 6C6F6E67 		.ascii	"long int\000"
  524      20696E74 
  524      00
- 525              	.LASF22:
- 526 0191 433A5C55 		.ascii	"C:\\Users\\Kurty\\Documents\\Heart Rate Monitor PSo"
- 526      73657273 
- 526      5C4B7572 
- 526      74795C44 
- 526      6F63756D 
- 527 01c0 435C4852 		.ascii	"C\\HR-Mon\\Heart Rate Monitor Workspace\\HRMon.cyds"
- 527      2D4D6F6E 
-ARM GAS  C:\Users\Kurty\AppData\Local\Temp\ccz1IDxW.s 			page 14
+ 525              	.LASF0:
+ 526 0191 7369676E 		.ascii	"signed char\000"
+ 526      65642063 
+ 526      68617200 
+ 527              	.LASF18:
+ 528 019d 44696769 		.ascii	"Digit_1_Read\000"
+ 528      745F315F 
+ 528      52656164 
+ARM GAS  C:\Users\CATHER~1\AppData\Local\Temp\ccKAs44d.s 			page 14
 
 
- 527      5C486561 
- 527      72742052 
- 527      61746520 
- 528 01f0 6E00     		.ascii	"n\000"
- 529              	.LASF0:
- 530 01f2 7369676E 		.ascii	"signed char\000"
- 530      65642063 
- 530      68617200 
- 531              	.LASF18:
- 532 01fe 44696769 		.ascii	"Digit_1_Read\000"
- 532      745F315F 
- 532      52656164 
- 532      00
+ 528      00
+ 529              	.LASF22:
+ 530 01aa 433A5C55 		.ascii	"C:\\Users\\Catherine\\Desktop\\Monash\\0. 2021\\1. "
+ 530      73657273 
+ 530      5C436174 
+ 530      68657269 
+ 530      6E655C44 
+ 531 01d7 53656D20 		.ascii	"Sem 1\\TRC3500\\Heart Rate Monitor\\Repo\\HR-Mon\\H"
+ 531      315C5452 
+ 531      43333530 
+ 531      305C4865 
+ 531      61727420 
+ 532 0205 65617274 		.ascii	"eart Rate Monitor Workspace\\HRMon.cydsn\000"
+ 532      20526174 
+ 532      65204D6F 
+ 532      6E69746F 
+ 532      7220576F 
  533              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -26,12 +26,18 @@ CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, ena
     // check for phototransistor reception somehow
     // if phototransistor receives input, activate other timer to begin measurement and disable the 1Hz timer for this ISR
     // if not, end this ISR and wait for it to be triggered again
-    /*
+    
+    //lux variable creation:
+    //pulse irs to get lux reading
+    //feed this into next if statement
+    
+    
     if (lux > threshold) {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
-        fingerDetected = 1;     //set high to trigger activation loop
+        //fingerDetected = 1;     //set high to trigger activation loop
+        measurePulse(); //might be more efficienct method than above
     }
     else {  //if no finger detected, continue on sleep mode functions every second
-        pulseDot() //calling pulsedot function once every second
+        pulseDot(); //calling pulsedot function once every second
     }
     */
     pulseDot();  
@@ -40,7 +46,23 @@ CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, ena
 }
 
 void measurePulse() {
-    // 
+    /*
+     Initially display "rEAd" while acquiring the first HR reading
+	 Wait 2 sec
+	 Display HR reading
+	 Keep HR reading on screen, measure for the next 2 sec and then provide another reading
+	 Read pulses and calculate HR
+     Detect when finger gone, and if so, go into sleep mode
+    */
+
+    displayData[0] = 10111011;   //r = 10111011
+    displayData[1] = 10000110;   //E = 10000110
+    displayData[2] = 10001000;   //A = 10001000
+    displayData[3] = 10100001;   //d = 10100001
+    
+    
+    
+    
 }
 
 // hex values to be sent to 7 seg display for active low

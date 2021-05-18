@@ -1,6 +1,6 @@
-C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cyprj|f70c403e-b6af-41ac-b62a-1bbf640c1e60
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|46386536-e05c-40ec-bdea-227712b37382
-C:\Users\Kurty\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|9ae9f0a1-ac8d-442f-bbae-ec433dfefac7
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e2597fa9-e260-4466-b996-45f57f26c686
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|80f6060e-96f9-4738-b984-625d5c70f392
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|00b662d0-a316-4a32-bf97-b0148edf6d96
+C:\Users\Catherine\Desktop\Monash\0. 2021\1. Sem 1\TRC3500\Heart Rate Monitor\Repo\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cyprj|9002e807-8070-45d0-b150-94f3bc12586d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a4d9cb07-0d55-460d-b6d9-6e91cc778380
+C:\Users\Catherine\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|52c943fb-236d-4535-a58b-6b766bbdc2a4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d83f0034-50f8-4e10-a329-94b70ebed868
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|89e904a9-0662-490c-9224-d2a0421b6ef9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9e566742-d8b2-4895-b9a2-eb535575df6d

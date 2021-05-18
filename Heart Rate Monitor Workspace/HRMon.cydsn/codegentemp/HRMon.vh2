@@ -2,7 +2,7 @@
 --	Conversion of HRMon.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed May 12 09:44:47 2021
+--	Wed May 12 10:02:00 2021
 --
 
 USE cypress.cypress.all;

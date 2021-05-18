@@ -1067,7 +1067,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x4623
+.debug_info     0x00000000     0x4645
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e2 .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_info    0x000004e2      0x4c9 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1080,9 +1080,9 @@ END GROUP
  .debug_info    0x00002de5      0x630 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(EEPROM.o)
  .debug_info    0x00003415      0x2d2 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(isr_1.o)
  .debug_info    0x000036e7      0x2f0 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(One_Hz_Timer.o)
- .debug_info    0x000039d7       0xaf .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyBootAsmGnu.o)
- .debug_info    0x00003a86      0x64d .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyFlash.o)
- .debug_info    0x000040d3      0x550 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CySpc.o)
+ .debug_info    0x000039d7       0xd1 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyBootAsmGnu.o)
+ .debug_info    0x00003aa8      0x64d .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyFlash.o)
+ .debug_info    0x000040f5      0x550 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CySpc.o)
 
 .debug_abbrev   0x00000000     0x128b
  *(.debug_abbrev)
@@ -1149,34 +1149,34 @@ END GROUP
  .debug_frame   0x00001548       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00001570       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x1842
+.debug_str      0x00000000     0x1864
  *(.debug_str)
- .debug_str     0x00000000      0x2f7 .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x34c (size before relaxing)
- .debug_str     0x000002f7      0x187 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x32e (size before relaxing)
- .debug_str     0x0000047e       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
-                                0x203 (size before relaxing)
- .debug_str     0x000004fd      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                                0x329 (size before relaxing)
- .debug_str     0x00000641       0x4a .\CortexM3\ARM_GCC_541\Debug\HRMon.a(Seven_Segment_Reg.o)
-                                0x1f2 (size before relaxing)
- .debug_str     0x0000068b      0x83d .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyLib.o)
-                                0xa66 (size before relaxing)
- .debug_str     0x00000ec8      0x365 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(cyPm.o)
-                                0x752 (size before relaxing)
- .debug_str     0x0000122d       0x32 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(Digit_Reg.o)
-                                0x1da (size before relaxing)
- .debug_str     0x0000125f      0x1b8 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(EEPROM.o)
-                                0x3e1 (size before relaxing)
- .debug_str     0x00001417       0xc5 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(isr_1.o)
-                                0x2c5 (size before relaxing)
- .debug_str     0x000014dc      0x1de .\CortexM3\ARM_GCC_541\Debug\HRMon.a(One_Hz_Timer.o)
-                                0x3d8 (size before relaxing)
- .debug_str     0x000016ba      0x11a .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyFlash.o)
-                                0x3df (size before relaxing)
- .debug_str     0x000017d4       0x6e .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CySpc.o)
-                                0x357 (size before relaxing)
+ .debug_str     0x00000000      0x319 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x36e (size before relaxing)
+ .debug_str     0x00000319      0x187 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x350 (size before relaxing)
+ .debug_str     0x000004a0       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x225 (size before relaxing)
+ .debug_str     0x0000051f      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x34b (size before relaxing)
+ .debug_str     0x00000663       0x4a .\CortexM3\ARM_GCC_541\Debug\HRMon.a(Seven_Segment_Reg.o)
+                                0x214 (size before relaxing)
+ .debug_str     0x000006ad      0x83d .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyLib.o)
+                                0xa88 (size before relaxing)
+ .debug_str     0x00000eea      0x365 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(cyPm.o)
+                                0x774 (size before relaxing)
+ .debug_str     0x0000124f       0x32 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(Digit_Reg.o)
+                                0x1fc (size before relaxing)
+ .debug_str     0x00001281      0x1b8 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(EEPROM.o)
+                                0x403 (size before relaxing)
+ .debug_str     0x00001439       0xc5 .\CortexM3\ARM_GCC_541\Debug\HRMon.a(isr_1.o)
+                                0x2e7 (size before relaxing)
+ .debug_str     0x000014fe      0x1de .\CortexM3\ARM_GCC_541\Debug\HRMon.a(One_Hz_Timer.o)
+                                0x3fa (size before relaxing)
+ .debug_str     0x000016dc      0x11a .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CyFlash.o)
+                                0x401 (size before relaxing)
+ .debug_str     0x000017f6       0x6e .\CortexM3\ARM_GCC_541\Debug\HRMon.a(CySpc.o)
+                                0x379 (size before relaxing)
 
 .debug_loc      0x00000000     0x1fb7
  *(.debug_loc)
@@ -1332,4 +1332,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\CortexM3\ARM_GCC_541\Debug\HRMon.elf elf32-littlearm)
+OUTPUT(C:\Users\Catherine\Desktop\Monash\0. 2021\1. Sem 1\TRC3500\Heart Rate Monitor\Repo\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\CortexM3\ARM_GCC_541\Debug\HRMon.elf elf32-littlearm)
