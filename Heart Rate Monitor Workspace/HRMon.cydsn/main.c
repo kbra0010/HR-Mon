@@ -49,8 +49,7 @@ int digitTwo = 2;
 int digitOne = 4;
 int digitZero = 8;
 
-int detectFlag;
-int detectFlag;
+int pulseFlag;
 
 long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
 int digit[4]; // should be a local var
@@ -141,7 +140,7 @@ int main(void)
         //only test finger detected every second, pulse IR to see if Lux > threshold
         /*
         if (fingerDetected = 1) { //Main loop for detected finger
-            detectFlag = 1; 
+            pulseFlag = 1; 
         }
         else {  //pulsing if no light detected so no finger detected - might need to flip this for thresholding lower or higher
             pulseDot() //get this to run every time the timer signal @ 1hz
@@ -232,13 +231,13 @@ void writeDisplay(long unsigned int displayData[4]) {
 }
 
 void pulseDot() {   //pulsing decimal for sleep mode, call on a 2hz 50% duty cycle (every 1 hz trigger function)
-    if(detectFlag == 0) { // dot is off
+    if(pulseFlag == 0) { // dot is off
         displayData[3] = displayData[3] + powl(2,7);    //setting MSB of final digit high, will be decimal point
-        detectFlag = 1;     //change trigger so that will change to turn off decimal next time step
+        pulseFlag = 1;     //change trigger so that will change to turn off decimal next time step
     }
-    else if(detectFlag == 1) {
+    else if(pulseFlag == 1) {
         displayData[3] = displayData[3] - powl(2,7);
-        detectFlag = 0;
+        pulseFlag = 0;
     }
 }
 
