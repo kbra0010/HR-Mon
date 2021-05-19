@@ -57,6 +57,7 @@ int digitOne = 4;
 int digitZero = 8;
 
 int pulseFlag;
+int fingerDetected; //swap to bool?
 
 long unsigned int displayData[4]; // 0 = ones digit, MSB = decimal point, bits 0 to 7 are the number
 int digit[4]; // should be a local var
@@ -76,18 +77,15 @@ CY_ISR(oneHzISR) {//timer to activate this ISR enabled once finger removed, enab
     //pulse irs to get lux reading
     //feed this into next if statement
     
-    /*
+    
     if (lux > threshold) {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
-        //fingerDetected = 1;     //set high to trigger activation loop
+        fingerDetected = 1;     //set high to trigger activation loop
         measurePulse(); //might be more efficienct method than above
     }
     else {  //if no finger detected, continue on sleep mode functions every second
         pulseDot(); //calling pulsedot function once every second
-    }
-    */
-    pulseDot();  
-        
-        
+        fingerDetected = 0; //when no finger detected, go into sleep mode
+    }              
 }
 
 void measurePulse() {

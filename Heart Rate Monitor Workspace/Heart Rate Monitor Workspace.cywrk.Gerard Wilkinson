@@ -86,39 +86,6 @@
 <ExpandedNodeIds>
 <v>Heart Rate Monitor Workspace</v>
 <v>Heart Rate Monitor Workspace\HRMon</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Decimal_place.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_0.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_1.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_2.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_3.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\EEPROM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_1.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment_Reg_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.elf</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.hex</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\HRMon.map</v>
 <v>Heart Rate Monitor Workspace\HRMon\HRMon.gpdsc</v>
 <v>Heart Rate Monitor Workspace\HRMon\HRMon.rpt</v>
 <v>Heart Rate Monitor Workspace\HRMon\HRMon_timing.html</v>
@@ -126,34 +93,9 @@
 <VisibleNodeIds>
 <v>Heart Rate Monitor Workspace</v>
 <v>Heart Rate Monitor Workspace\HRMon</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Decimal_place.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_0.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_1.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_2.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_3.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Digit_Reg_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\EEPROM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_1.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\One_Hz_Timer_PM.lst</v>
-<v>Heart Rate Monitor Workspace\HRMon\CortexM3\ARM_GCC_541\Debug\Listing Files\Seven_Segment.lst</v>
+<v>Heart Rate Monitor Workspace\HRMon\HRMon.gpdsc</v>
+<v>Heart Rate Monitor Workspace\HRMon\HRMon.rpt</v>
+<v>Heart Rate Monitor Workspace\HRMon\HRMon_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
