@@ -26,21 +26,28 @@ int getDigitIndex(int inputIndex);
 
 void programMode();
 void activeMode();
+void sleepMode();
 
 
 // ----------------------- VARIABLES -----------------------
 // hex values to be sent to 7 seg display for active low
 // these could be preprocessor commands instead (#define)
-int zero = 0xC0;
-int one = 0xF9;
-int two = 0xA4;
-int three = 0xB0;
-int four = 0x99;
-int five = 0x92;
-int six = 0x82;
-int seven = 0xF8;
-int eight = 0x80;
-int nine = 0x98;
+
+// D.P + GFEDCBA
+int zero = 0xC0;    // 11000000
+int one = 0xF9;     // 11111001
+int two = 0xA4;     // 10100100
+int three = 0xB0;   // 10110000
+int four = 0x99;    // 10011001
+int five = 0x92;    // 10010010
+int six = 0x82;     // 10000010
+int seven = 0xF8;   // 11111000
+int eight = 0x80;   // 10000000
+int nine = 0x98;    // 10011000
+int r = 0xAF;       // 10101111
+int E = 0x86;       // 10000110
+int A = 0x88;       // 10001000
+int d = 0xA1;       // 10100001
 
 
 // digit variables (not completely necessary, but a good indicator of one-hot display encoding)
@@ -58,7 +65,7 @@ int digit[4]; // should be a local var
 // ----------------------- ISR BOIS -----------------------
 
 
-CY_ISR(sleepMode) {//timer to activate this ISR enabled once finger removed, enabled by default at start
+CY_ISR(oneHzISR) {//timer to activate this ISR enabled once finger removed, enabled by default at start
     // triggered once every second by 1Hz timer
     // turn on IR LEDs
     // check for phototransistor reception somehow
@@ -93,14 +100,10 @@ void measurePulse() {
      Detect when finger gone, and if so, go into sleep mode
     */
 
-    displayData[0] = 10111011;   //r = 10111011
-    displayData[1] = 10000110;   //E = 10000110
-    displayData[2] = 10001000;   //A = 10001000
-    displayData[3] = 10100001;   //d = 10100001
-    
-    
-    
-    
+    displayData[0] = r;
+    displayData[1] = E;   //E = 10000110
+    displayData[2] = A;   //A = 10001000
+    displayData[3] = d;   //d = 10100001
 }
 
 
@@ -110,7 +113,7 @@ int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     isr_1_ClearPending();
-    isr_1_StartEx(sleepMode);
+    isr_1_StartEx(oneHzISR);
     
     
     //One_Hz_Timer_Enable(); //unnecessary, _Start encompasses this
@@ -132,8 +135,14 @@ int main(void)
     saveDigitsToRAM();
     
     startSequence();
-    CyDelay(1000);
-    measurePulse();
+    //CyDelay(1000);
+    
+    ///*
+    displayData[0] = r; //10101111;  //r
+    displayData[1] = E; //10110010;  //E
+    displayData[2] = A; //two;       //A
+    displayData[3] = d; //10100001;  //d = 10100001
+    //*/
     
     for(;;) {
         //Finger detecting thresholding - will need input from IR so commented for now
@@ -209,6 +218,7 @@ void saveDigitsToRAM() {
             break;
         }
         
+        // unsure if this is necessary
         if(index == 1) { // 2nd most significant digit
             displayData[index] = displayData[index] + powl(2,7); //works
         }
@@ -262,6 +272,8 @@ void startSequence() {
     digit[3] = (teamNumber % 10);
     saveDigitsToRAM();
     writeDisplay(displayData);
+    
+    CyDelay(1000);
     
     programMode();
 }

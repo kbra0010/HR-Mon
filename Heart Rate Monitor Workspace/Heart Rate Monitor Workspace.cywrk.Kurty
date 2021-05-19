@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Heart Rate Monitor Workspace\HRMon\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Heart Rate Monitor Workspace\HRMon\HRMon.cydwr">
 <ExpandedNodeIds>
 <v>Heart Rate Monitor Workspace</v>
 <v>Heart Rate Monitor Workspace\HRMon</v>
@@ -32,6 +32,7 @@
 <v>Heart Rate Monitor Workspace\HRMon\Header Files\cyapicallbacks.h</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files\main.c</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source</v>
 <v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -53,6 +54,24 @@
 <v>Heart Rate Monitor Workspace\HRMon\Source Files</v>
 <v>Heart Rate Monitor Workspace\HRMon\Source Files\main.c</v>
 <v>Heart Rate Monitor Workspace\HRMon\Generated_Source</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cy_boot</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Decimal_place</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_0</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_1</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_2</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_3</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Digit_Reg</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\EEPROM</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\isr_1</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\One_Hz_Timer</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Seven_Segment</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\Seven_Segment_Reg</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Heart Rate Monitor Workspace\HRMon\Generated_Source\PSoC5\cydevice.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -197,9 +216,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
+<name v=".\HRMon.cydsn\main.c" />
 <name v=".\HRMon.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\HRMon.cydsn\HRMon.cydwr" />
-<name v=".\HRMon.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -207,7 +226,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1654, 725" SelectedTabbedMdiWindow="c45c1c7e-8c9c-429e-9903-49eb1f4c222e"><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\TopDesign\TopDesign.cysch" Guid="2c4f3e34-fb53-486d-a27c-7734ff79eaf1" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cydwr" Guid="3887ffa0-3eb5-4f96-b416-56c0f6448f48" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\main.c" Guid="c45c1c7e-8c9c-429e-9903-49eb1f4c222e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1270, 509" SelectedTabbedMdiWindow="bda66320-0156-4f9e-95b7-dd3f946fd9cf"><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\main.c" Guid="bda66320-0156-4f9e-95b7-dd3f946fd9cf" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\TopDesign\TopDesign.cysch" Guid="2881815f-a2fd-49d0-b3d2-39ca3dddc33b" /><DocumentWindow Key="C:\Users\Kurty\Documents\Heart Rate Monitor PSoC\HR-Mon\Heart Rate Monitor Workspace\HRMon.cydsn\HRMon.cydwr" Guid="0c0f84f0-dd4b-44e7-88a7-03009e0f8937" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d25ef4f0-ec4d-4806-80f9-637a86d37bed" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
