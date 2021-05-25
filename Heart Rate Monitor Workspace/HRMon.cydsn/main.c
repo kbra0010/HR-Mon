@@ -66,7 +66,7 @@ int digit[4]; // should be a local var
 // ----------------------- ISR BOIS -----------------------
 
 
-CY_ISR(oneHzISR) {//timer to activate this ISR enabled once finger removed, enabled by default at start
+CY_ISR(One_Hz_ISR_Func) {//timer to activate this ISR enabled once finger removed, enabled by default at start
     // triggered once every second by 1Hz timer
     // turn on IR LEDs
     // check for phototransistor reception somehow
@@ -77,7 +77,7 @@ CY_ISR(oneHzISR) {//timer to activate this ISR enabled once finger removed, enab
     //pulse irs to get lux reading
     //feed this into next if statement
     
-    
+    /*
     if (lux > threshold) {    //testing to see if lux has been detected that means finger inserted - might need to flip this based on whether it gets brighter or darker when finger inserted
         fingerDetected = 1;     //set high to trigger activation loop
         measurePulse(); //might be more efficienct method than above
@@ -85,7 +85,13 @@ CY_ISR(oneHzISR) {//timer to activate this ISR enabled once finger removed, enab
     else {  //if no finger detected, continue on sleep mode functions every second
         pulseDot(); //calling pulsedot function once every second
         fingerDetected = 0; //when no finger detected, go into sleep mode
-    }              
+    }
+    */
+}
+
+CY_ISR(HR_Pulse_ISR_Func) {
+    // triggered when comparator goes high (produces an output 0 to 1 transition, which the counter picks up)
+    // 
 }
 
 void measurePulse() {
@@ -110,8 +116,8 @@ void measurePulse() {
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-    isr_1_ClearPending();
-    isr_1_StartEx(oneHzISR);
+    One_Hz_ISR_ClearPending();
+    One_Hz_ISR_StartEx(One_Hz_ISR_Func);
     
     
     //One_Hz_Timer_Enable(); //unnecessary, _Start encompasses this
@@ -280,6 +286,20 @@ void programMode() {
     
 }
 
+void activeMode() {
+    /*
+    Calibration
+        Display CALC on screen during calibration
+        Adjust LED brightness based upon finger properties
+	Measurement
+    	Initially display "rEAd" while acquiring the first HR reading
+    	Wait 2 sec
+    	Read pulses and calculate HR
+    	Display HR reading
+    	Keep HR reading on screen, measure for the next 2 sec and then provide another reading
+        Detect when finger gone, and if so, go into sleep mode
+    */
+}
 /*
 
 // 7 segment testing code
