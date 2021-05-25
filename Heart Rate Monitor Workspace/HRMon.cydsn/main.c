@@ -283,7 +283,35 @@ void startSequence() {
 }
 
 void programMode() {
+    //-Increment / decrement number
+	//-Save data and exit program mode switch
+    //-Blink at 1000mS on and 500mS off throughout prog mode
+    //teamNumber = EEPROM read, initiated in main
+    //blinking throughout, looping continously while in program mode
+    /*
+    for(;;) {
+        //led on
+        cywait(1000ms)
+        //led off
+        cywait(500ms)
+        
+    }
+    */
+    pulseDot()
     
+    //test if incremented, switch 1 pressed
+    teamNumber = teamNumber + 1
+    
+    //test if decremented, switch 2 pressed
+    team number = teamNumber - 1
+    
+    //all needs to be in a block triggered if exiting program mode, switch 3 pressed
+        //store back to eeprom to save, calling display
+        EEPROM_Start();
+        EEPROM_WriteByte(teamNumber,0); // storing the new team number variable in EEPROM
+        
+        //switching back to active mode
+        activeMode() // make sure calling the right function here
 }
 
 void activeMode() {
